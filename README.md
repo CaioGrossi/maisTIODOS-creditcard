@@ -8,6 +8,11 @@ O problema proposto foi de criar uma API para cadastro de cartão de crédito e 
 - GET - ```/api/v1/credit-card``` (listar todos os cartoes de credito);
 - GET - ```/api/v1/credit-card/{ID}``` (mostrar dados de cartão de crédito por ID);
 
+
+# Documentação
+
+Toda a documentação da API e rotas pode ser encontrado na rota ```/docs``` (http://127.0.0.1:8000/docs).
+
 # Rodando o projeto
 
 Para rodar o projeto, as configurações usadas são:
