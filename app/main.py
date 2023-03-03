@@ -2,6 +2,8 @@ from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.dependencies import get_db
 from creditcard import CreditCard as CreditCardValidation
+from starlette.middleware.base import BaseHTTPMiddleware
+from app.middlewares.auth import AuthMiddleware
 from app.helpers import create_credit_card, get_all_credit_cards, get_credit_card_by_id
 
 from app.schemas import CreditCardCreateFromAPISchema, CreditCardCreateInternalSchema, CreditCardSchema
@@ -10,6 +12,7 @@ from .database.config import Base, engine
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="API Cartão de crédito maisTODOS")
+app.add_middleware(BaseHTTPMiddleware, dispatch=AuthMiddleware())
 
 @app.get("/api/v1/credit-card", response_model=list[CreditCardSchema])
 def list_credit_cards(db: Session = Depends(get_db)):
