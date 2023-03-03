@@ -1,5 +1,13 @@
 # backend-python-creditcard
 
+# Descrição
+
+O problema proposto foi de criar uma API para cadastro de cartão de crédito e visualização dos dados. A api conta com 3 rotas:
+
+- POST - ```/api/v1/credit-card```(cadastro de cartão de crédito);
+- GET - ```/api/v1/credit-card``` (listar todos os cartoes de credito);
+- GET - ```/api/v1/credit-card/{ID}``` (mostrar dados de cartão de crédito por ID);
+
 # Rodando o projeto
 
 Para rodar o projeto, as configurações usadas são:
