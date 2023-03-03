@@ -18,3 +18,11 @@ Os passos para rodar os testes são:
 
 1. rode ```pytest``` no diretório raiz do projeto;
 
+# Tecnologias escolhidas
+
+- [Python](https://www.python.org/) - Linguagem de programação alto nivel interpretadas e altamente usada para desenvolvimento web;
+- [FastAPI](https://fastapi.tiangolo.com/) - Framework python moderno para construção de web APIs;
+- [Pydantic](https://docs.pydantic.dev/) - Biblioteca para validação de dados e criação e schemas;
+- [SQLAlchemy](https://www.sqlalchemy.org/) - Biblioteca de ORM SQL para python;
+- [Cryptography](https://cryptography.io/en/latest/) - Biblioteca para criptografia de dados;
+- [Pytest](https://docs.pytest.org/en/7.2.x/) - Biblioteca de testes para python;
