@@ -21,7 +21,7 @@ Os passos para rodar o projeto são:
 3. rode ```pip install -r requirements.txt``` para instalar as dependências;
 4. rode ```uvicorn app.main:app --reload```;
 
-*TODAS*
+**TODAS** as rotas de API sao protegidas por autenticacao Basic, para poder acessar elas coloque um Header ```Authorization Basic bWFpc3RvZG9zOmNyZWRpdF9jYXJkX2FwaQ==``` para ter acesso liberado as rotas.
 
 
 Os passos para rodar os testes são:
