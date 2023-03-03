@@ -3,3 +3,6 @@ uvicorn==0.20.0
 SQLAlchemy==2.0.4
 cryptography==39.0.1
 load-dotenv==0.1.0
+python-creditcard @ git+https://github.com/maistodos/python-creditcard.git@6b6bcc5d975985337c35e5c1a4f87d861bcac731
+pytest==7.2.1
+httpx==0.23.3
