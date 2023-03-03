@@ -1,4 +1,7 @@
 from fastapi import FastAPI
+from .database.config import Base, engine
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="API Cartão de crédito maisTODOS")
 
