@@ -21,6 +21,8 @@ Os passos para rodar o projeto são:
 3. rode ```pip install -r requirements.txt``` para instalar as dependências;
 4. rode ```uvicorn app.main:app --reload```;
 
+*TODAS*
+
 
 Os passos para rodar os testes são:
 
