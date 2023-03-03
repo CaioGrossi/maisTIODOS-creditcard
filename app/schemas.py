@@ -2,6 +2,7 @@ import calendar
 from datetime import date, datetime
 from pydantic import BaseModel, Field, validator
 from creditcard import CreditCard as CreditCardValidation
+from creditcard.exceptions import BrandNotFound
 
 
 class CreditCardBaseSchema(BaseModel):
@@ -27,6 +28,11 @@ class CreditCardCreateFromAPISchema(BaseModel):
 
         if not cc_validator.is_valid():
             raise ValueError("credit card number is not valid")
+
+        try:
+            brand = cc_validator.get_brand()
+        except BrandNotFound:
+            raise ValueError("credit card brand is not supported by system")
 
         return cc_number
 
